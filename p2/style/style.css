@@ -248,8 +248,8 @@ overflow: hidden;
         margin-top: 98px;
     }
     .bio{
-        height: 1000px;
-        
+        height: auto;
+        padding: 15px;
         flex-direction: column;
         position: relative;
         
@@ -288,6 +288,4 @@ overflow: hidden;
         top: 0px;
     }
     
-
-
 }
