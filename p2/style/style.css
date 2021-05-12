@@ -8,6 +8,46 @@ body{
   background-color: black;
   font-family: 'Poppins', sans-serif;
 }
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    
+}
+
+#header-nav {
+    background-color: black;
+    border-radius: 0;
+    border: 0;
+    margin-top: 30px;
+}
+#nav-list{
+    margin-top: 10px;
+}
+#nav-list a{
+    color: white;
+    text-align: center;
+    background: transparent;
+}
+#nav-list a:hover{
+    font-size: 15px;
+    text-decoration: underline;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+.navbar-brand a{
+    text-decoration: none;
+}
+.navbar-brand h1{
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: none;
+}
+
 .header{
     background-color: black;
     color: white;
@@ -174,7 +214,12 @@ overflow: hidden;
     position: absolute;
     background-color: rgba(255,255, 255, 0.2);
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
+    .navbar-brand h1{
+        
+        font-size: 15px;
+        
+    }
     .header{
         height: 80vh;
     }
@@ -203,7 +248,7 @@ overflow: hidden;
         margin-top: 98px;
     }
     .bio{
-        height: 100vh;
+        height: 1000px;
         
         flex-direction: column;
         position: relative;
