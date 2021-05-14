@@ -165,6 +165,7 @@ header{
     justify-content: space-around;
     position: relative;
     padding-top: 50px;
+    margin-bottom: 20px;
 }
 .card1,.card2,.card3{
 margin-top: 50px;
@@ -343,7 +344,7 @@ background: linear-gradient(342deg, rgba(38,192,193,1) 8%, rgba(245,3,36,1) 84%)
         
     }
     .header{
-        height: 80vh;
+        height: 90vh;
     }
     .header video{
         margin-top: 350px;
@@ -366,11 +367,11 @@ background: linear-gradient(342deg, rgba(38,192,193,1) 8%, rgba(245,3,36,1) 84%)
        
     }
     .content .image{
-        height: 30vh;
+        height: 40vh;
         margin-top: 98px;
     }
     .bio{
-        height: 1000px;
+        height: 110vh;
         
         flex-direction: column;
         position: relative;
@@ -409,7 +410,123 @@ background: linear-gradient(342deg, rgba(38,192,193,1) 8%, rgba(245,3,36,1) 84%)
         position: absolute;
         top: 0px;
     }
+    .achive{
+        height: 150vh;
+    }
     
+    .achi{
+       
+        flex-direction: column;
+    
+    }
+    .achi1,.achi2,.achi3,.achi4{
+        width: 40%;
+    }
+    .a1,.a2,.a3,.a4{
+        font-size: 12px;
+        
+    }
 
+}
 
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .header{
+        height: 80vh;
+    }
+    .content{
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: 60vh;
+    }
+    .quo .quo1{
+        position:absolute;
+        top: 50px;
+        right: 20px;
+        text-align: center;
+        font-size: 25px;
+       
+    }
+    .content .image{
+        height: 40vh;
+        margin-top: 98px;
+    }
+    .bio{
+        height: 70vh;
+        
+        flex-direction: column;
+        position: relative;
+        
+    }
+    .bio .para{
+        font-size: 15px;
+        width: 90%;
+      
+    }
+    .achi1,.achi2,.achi3,.achi4{
+        width: 25%;
+    }
+    .a1{
+        top: 30%;
+    }
+    .a1,.a2,.a3,.a4{
+        font-size: 12px;
+        
+    }
+    .card1,.card2,.card3{
+        width: 30%;
+        
+    }
+}
+
+@media screen and (max-width: 1307px) and (min-width: 992px){
+    .header{
+        height: 80vh;
+    }
+    .content{
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: 60vh;
+    }
+    .quo .quo1{
+        position:absolute;
+        top: 50px;
+        right: 20px;
+        text-align: center;
+        font-size: 30px;
+       
+    }
+    .content .image{
+        height: 40vh;
+        margin-top: 98px;
+    }
+     .bio{
+        height: 60vh;
+        
+        flex-direction: column;
+        position: relative;
+        
+    }
+    .bio .para{
+        font-size: 15px;
+        width: 90%;
+      
+    }
+    .achi1,.achi2,.achi3,.achi4{
+        width: 25%;
+    }
+    .a1{
+        top: 30%;
+    }
+    .a1,.a2,.a3,.a4{
+        font-size: 15   px;
+        
+    }
+    .card1,.card2,.card3{
+        width: 25%;
+        
+    }
 }
