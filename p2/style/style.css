@@ -11,7 +11,7 @@ body{
 header{
     position: sticky;
     top: 0px;
-    z-index: 2;
+    z-index: 3;
     
 }
 
@@ -164,6 +164,7 @@ header{
     display: flex;
     justify-content: space-around;
     position: relative;
+    padding-top: 50px;
 }
 .card1,.card2,.card3{
 margin-top: 50px;
@@ -214,6 +215,127 @@ overflow: hidden;
     position: absolute;
     background-color: rgba(255,255, 255, 0.2);
 }
+.achive{
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achive h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.achi{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    
+    align-items: center;
+    justify-content: space-around;
+
+}
+.achi1,.achi2,.achi3,.achi4{
+    height: 70%;
+    background-color: black;
+    width: 15%;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px black;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.achi1 img ,.achi2 img,.achi3 img,.achi4 img{
+    width: 100%;
+    height: 100%    ;
+    position: absolute;
+    z-index: 2;
+    
+}
+.ac1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    animation: achi11 ease-in-out forwards 1000ms;
+    animation-delay: 2s;
+    z-index: 1;
+
+    
+}
+.a1,.a2,.a3,.a4{
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   font-size: 20px;
+   padding: 10px;
+   text-transform: capitalize;
+   font-weight: bolder;
+   top: 50px;
+   position: absolute;
+   z-index: 0;
+
+}
+.a2 , .a3 , .a4{
+    top: 35%;
+}
+.achi1:hover ,.achi2:hover ,.achi3:hover ,.achi4:hover{
+    filter: grayscale();
+    background-blend-mode: exclusion;
+}
+.achi img:hover{
+    animation: ach ease-in-out forwards 1000ms;
+    
+}
+
+.achi .a1:hover ,.achi .a2:hover, .achi .a3:hover , .achi .a4:hover{
+    animation: achtext ease-in-out forwards 1000ms;
+    
+    animation-delay: 1s;
+}
+@keyframes achi11{
+    form{
+          background-color: blue;
+          opacity: 0;
+    }
+    to{
+        background: rgb(38,192,193);
+background: linear-gradient(342deg, rgba(38,192,193,1) 8%, rgba(245,3,36,1) 84%);
+         opacity: 0.5;
+    }
+}
+@keyframes ach{
+    from{
+      opacity: 1;
+     
+    }
+    to{
+     opacity: 0;
+     
+    }
+}
+@keyframes achtext{
+    from{
+       /* opacity: 0; */
+       transform: translate(0,0);
+    }
+    to{
+       /* opacity: ; */
+       transform: translate(0,-20%);
+    }
+}
+.foot{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+}
 @media screen and (max-width: 767px){
     .navbar-brand h1{
         
@@ -248,8 +370,8 @@ overflow: hidden;
         margin-top: 98px;
     }
     .bio{
-        height: auto;
-        padding: 15px;
+        height: 1000px;
+        
         flex-direction: column;
         position: relative;
         
@@ -288,4 +410,6 @@ overflow: hidden;
         top: 0px;
     }
     
+
+
 }
