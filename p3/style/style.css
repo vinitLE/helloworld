@@ -68,12 +68,14 @@ header{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    margin-bottom: 300px;
 }
 .video{
   width: 50%;
   height: 80%;
   margin-top: 100px;
   margin-left: 50px;
+  margin-bottom: 200px;
 }
 .heading h1{
     position: absolute;
@@ -131,7 +133,7 @@ header{
     display: flex;
     height: 70%;
     width: 40%;
-    margin-top: 100px;
+   
   }
   
   /*
@@ -222,7 +224,7 @@ header{
   .image2{
       margin-top: 100px;
   }
-  #img11{
+  #img11,#img12{
       margin-left: 30px;
   }
   .quotes a{
@@ -242,8 +244,12 @@ header{
   }
   .page3{
     width: 100%;
-    height: 90vh;
+    background: rgb(213,135,95);
+background: radial-gradient(circle, rgba(213,135,95,1) 0%, rgba(255,223,205,1) 45%);
+    height: 95vh;
     display: flex;
+    color: black;
+    padding-top: 100px;
   }
   .teach{
     width: 50%;
@@ -268,7 +274,7 @@ header{
   }
   .vl{
     height: 20vh;
-    border: 0.1px solid blanchedalmond;
+    border: 0.1px solid black;
     margin-top: 50px;
   }
   .subh1,.subh2{
